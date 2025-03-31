@@ -1,0 +1,26 @@
+-----------------------------------------------------------------------------
+Cretae .env file add below lines
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
+export AWS_DEFAULT_REGION=us-east-1
+export AWS_DEFAULT_OUTPUT_FORMAT=json
+
+-----------------------------------------------------------------------------
+To connect from local aws cli to aws in terminal
+
+change the terminal to gitbash
+source .env -> it will set for terminal
+-----------------------------------------------------------------------------
+
+to check configuration 
+aws sts get-caller-identity
+-----------------------------------------------------------------------------
+
+Terraform commands 
+terraform init - Use the terraform init command to initialize your working directory. This command prepares your directory for other Terraform commands and ensures that Terraform has everything it needs to run.
+terraform plan - Use terraform plan to create an execution plan. This command determines what actions are necessary to achieve the desired state specified in your configuration files.
+terraform apply- once you're satisfied with the plan, apply it using terraform apply. This command will make the necessary changes to reach the desired state of your configuration.
+terraform destroy- When you no longer need the infrastructure, you can use terraform destroy to remove all resources created by your Terraform configuration. This will also clean up the state.
+
+-----------------------------------------------------------------------------
+
